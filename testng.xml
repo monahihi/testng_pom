@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Demo login with testng" parallel="methods" thread-count="1">
+        <classes>
+            <class name="test.TCLogin">
+                <methods>
+                    <include name="TC1_LoginSuccessfully"/>
+                    <include name="TC2_LoginFail"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
